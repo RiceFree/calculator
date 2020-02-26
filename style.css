@@ -1,0 +1,85 @@
+body {
+    height: 100%;
+    background-image: url("foggy_birds.png");
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(59, 52, 59);
+    font-size: 50px;
+}
+#machine {
+    background-color: thistle;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(95, 75, 95);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "screen screen screen screen"
+    "keyboard keyboard keyboard operators";
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+#screen {
+    width: 550px;
+    background-image: linear-gradient(rgb(253, 229, 253), rgb(255, 254, 255));
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: end;
+    font-size: 30px;
+    grid-area: screen;
+    font-family: sans-serif;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: keyboard;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 5px;
+
+}
+
+.btn {
+    text-align: center;
+    height: 40px;
+    background-image: linear-gradient(rgb(255, 151, 81),rgb(231, 136, 73));
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.OpBtn {
+    text-align: center;
+    height: 40px;
+    background-image: linear-gradient(rgb(85, 83, 202), rgb(70, 69, 172));
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+#clear {
+    background-image: linear-gradient(rgb(184, 160, 184), rgb(156, 125, 155));
+    font-family: sans-serif;
+}
+
+#operators {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 5px;
+    grid-area: operators;
+}
