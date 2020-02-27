@@ -22,13 +22,16 @@ h1 {
     grid-template-rows: auto;
     grid-template-areas:
     "screen screen screen screen"
-    "keyboard keyboard keyboard operators";
+    "keyboard keyboard keyboard operators"
+    "clear . . equal";
     grid-column-gap: 10px;
     grid-row-gap: 20px;
+    
 }
 
 #screen {
     width: 550px;
+    height: 50px;
     background-image: linear-gradient(rgb(253, 229, 253), rgb(255, 254, 255));
     border-radius: 5px;
     margin: 10px auto;
@@ -74,12 +77,36 @@ h1 {
 #clear {
     background-image: linear-gradient(rgb(184, 160, 184), rgb(156, 125, 155));
     font-family: sans-serif;
+    grid-area: clear;
+    height: 70px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: large;
+    color: whitesmoke;
 }
-
+#equal {
+    grid-area: equal;
+    text-align: center;
+    height: 40px;
+    background-image: linear-gradient(rgb(202, 83, 93), rgb(172, 69, 69));
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    color: whitesmoke;
+    margin: 5px;
+}
 #operators {
     display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
     padding: 5px;
     grid-area: operators;
+}
+
+.hoverBtn {
+    background-image: linear-gradient(rgb(141, 74, 29),rgb(192, 119, 70));
+}
+.hoverOpBtn {
+    background-image: linear-gradient(rgb(38, 37, 102), rgb(108, 107, 151));
 }
